@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none !important;
+}
+
+/* Main Grid layout */
+.landing {
+  display: grid;
+  grid-template-rows: 200px 12fr 100px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 6fr 6fr;
+}
+
+/* Heading bar styling */
+.nav {
+  display: flex;
+  height: 15vh;
+  background: #8bbabb;
+  color: #6c7b95;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  margin-right: 150px;
+}
+
+.main-title {
+  font-size: 50px;
+  margin-left: 100px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-left: auto; */
+}
+
+.link {
+  display: flex;
+  color: #464159;
+  padding: 0 10px;
+  font-size: 25px;
+}
+
+/* dropdown button */
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #c7f0db;
+  border-radius: 25px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: #464159;
+  background: #c7f0db;
+  border-radius: 25px;
+}
+
+.dropdown-content a:hover {
+  background-color: #6c7b95;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-size: 20px;
+  padding: 10px 0 5px;
+}
+
+.dropdown-link {
+  padding: 1px 10px;
+}
+
+/* Main content styling */
+.content {
+  background: #fff;
+}
+
+.week-grid {
+  display: grid;
+  grid-template-rows: 9fr 3fr;
+  place-self: center;
+  padding: 10px 10px;
+  margin: 20px 0px 60px;
+  height: 80vh;
+  width: 50vw;
+  background: #8bbabb;
+  border-radius: 25px;
+  box-shadow: 0 6px 10px 0 #6c7b95;
+}
+
+.week-image {
+  background: white;
+  border-radius: 25px 25px 0 0;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.week-text {
+  background: grey;
+  border-radius: 0 0 25px 25px;
+  padding: 10px;
+}
+
+/* Page footer styling */
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  background: #8bbabb;
+  justify-content: center;
+  align-items: center;
+  color: #c7f0db;
+}
+
+.footer-icon {
+  margin: 20px 10px 30px;
+  color: #c7f0db;
+}
+
+/* Responsive styling */
+
+@media screen and (max-width: 1080px) {
+
+  .title {
+    margin-right: 0px;
+  }
+
+  .main-title {
+    margin-left: 10px;
+    font-size: 35px;
+  }
+
+  .week-grid {
+    height: 90vh;
+    width: 90vw;
+  }
+
+  .link {
+    font-size: 20px;
+    padding: 0 5px;
+  }
+
+}
